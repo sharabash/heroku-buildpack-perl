@@ -7,6 +7,8 @@ indent() {
 BUILD_DIR=$1
 CACHE_DIR=$2
 
+echo "(debug) BUILD DIR IS $BUILD_DIR, CACHE DIR IS $CACHE_DIR, PWD IS $PWD"
+
 PATH="$BUILD_DIR/perl5/bin:$PATH"
 
 export PERL_MB_OPT="--install_base $BUILD_DIR/perl5"
