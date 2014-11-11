@@ -4,7 +4,7 @@ cat << EOF
 ---
 addons:
 config_vars:
-  PATH: local/bin:/usr/local/bin:/usr/bin:/bin
+  PATH: /app/perl5/bin:/usr/local/bin:/usr/bin:/bin
 default_process_types:
-  web: perl -Mlib=\$PWD/local/lib/perl5 ./local/bin/starman --preload-app --port \$PORT bin/app.pl
+  web: perl -Mlib=./perl5/lib/perl5 ./perl5/bin/starman --preload-app --port \$PORT bin/app.pl
 EOF
